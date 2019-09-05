@@ -24,9 +24,9 @@
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
+        "laravel/homestead": "^9.1",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0",
-        "laravel/homestead": "^5"
+        "phpunit/phpunit": "~5.0"
     },
     "autoload": {
         "classmap": [
@@ -49,12 +49,10 @@
             "php artisan key:generate"
         ],
         "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "Illuminate\\Foundation\\ComposerScripts::postInstall"
         ],
         "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
         ]
     },
     "config": {
